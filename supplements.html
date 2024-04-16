@@ -1,0 +1,263 @@
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+<meta charset="UTF-8">
+
+
+
+<header class="text-gray-600 body-font">
+  
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="https://mydy.dypatil.edu/rait/theme/image.php/essential/theme/1626274710/favicon">
+       <title>Supplements</title>  
+        </svg>
+        <a class="ml-3 text-xl" href="flexfit.html" >Flexfit</a>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="flexfit.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+        <a class="mr-5 hover:text-gray-900" href="pricing.html">Services</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+      </nav>
+
+      <div id="usernameDisplay"></div>
+      
+    </div>
+  </header>
+
+  
+  <script>
+    // Retrieve username from local storage
+    const username = localStorage.getItem('username');
+    const usernameDisplay = document.getElementById('usernameDisplay');
+
+    // Update DOM to display username or sign-in button
+    if (username) {
+        usernameDisplay.innerText = `Welcome, ${username}!`;
+    } else {
+        // If username doesn't exist, create and append sign-in button
+        const signInButton = document.createElement('a');
+        signInButton.innerText = 'Sign In';
+        signInButton.href = 'index.html';
+        signInButton.classList.add('inline-flex', 'items-center', 'bg-gray-100', 'border-0', 'py-1', 'px-3', 'focus:outline-none', 'hover:bg-gray-200', 'rounded', 'text-base', 'mt-4', 'md:mt-0');
+        usernameDisplay.appendChild(signInButton);
+    }
+</script>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://static.thcdn.com/productimg/1600/1600/11654621-8324934868434370.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.myprotein.co.in/sports-nutrition/impact-whey-protein/11654605.html?affil=thggpsad&switchcurrency=INR&shippingcountry=IN&variation=12388824&affil=mpppc_campaign=71700000037576079&adtype=pla&product_id=12388824&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdomtvrqgIMXCZ3R74_7VhVnMGByjFRdti62GAAViwEVLWMrUF9UJAMaAmmaEALw_wcB&gclsrc=aw.ds" >Whey Protein</a>
+            
+          </div>
+        </div>
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-auto block" src="https://www.nutrac.in/cdn/shop/products/M1_700x.jpg?v=1597930586">
+         
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.guardian.in/products/gnc-mega-men-sport-multivitamin-120-tablets?variant=43468467896551&currency=INR&utm_source=Google&utm_medium=cpc&utm_campaign=sok-gnc-performancemax-multivitamin-250822&utm_content=&utm_term=&placement=&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdoT6KYT2c87-YI61Au3_lg8yodoKsNmr2WMNcKPtuRr7ACt0ldhO1YaAjGfEALw_wcB" >Multivitamin</a>
+            
+          </div>
+        </div>
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://onlineingredient.com/cdn/shop/products/BiovenIngredients-LightMagnesiumOxide_1_1024x1024@2x.jpg?v=1679031058">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://onlineingredient.com/products/magnesium-oxide-light?variant=34475052400685&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdpi7KbuzxkapbYow7UOcQTCb8ZgGlRK9UPrHKDhkdeDJpQYqdtvnWEaAll1EALw_wcB" >Magnesium Powder</a>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://static.thcdn.com/productimg/1600/1600/11654670-5834625022320775.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.myprotein.co.in/sports-nutrition/creatine-monohydrate-powder/11654670.html?affil=thggpsad&switchcurrency=INR&shippingcountry=IN&variation=11654672&affil=mpppc_campaign=71700000043876857&adtype=pla&product_id=11654672&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdqNj12MGMFH0-rY-zIu9sJ_Zpyo1kDUUbmFETHNtWcrolLyHIlzmWoaAq5wEALw_wcB&gclsrc=aw.ds" >Ceratine Powder</a>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-auto h-auto block" src="https://static.thcdn.com/productimg/1600/1600/11654668-1144934886651801.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.myprotein.co.in/sports-nutrition/l-glutamine-powder/11654666.html?affil=thggpsad&switchcurrency=INR&shippingcountry=IN&variation=11654667&affil=mpppc_campaign=71700000043275101&adtype=pla&product_id=11654667&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdpapkye3E2XLZ02vbjBjffdsLoiAl0yrBrYS5Ytyo1b47W7eipkCkQaAhOGEALw_wcB&gclsrc=aw.ds" >Glutamine</a>
+            
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-auto h-auto block" src="https://img4.hkrtcdn.com/28162/prd_2816113-MuscleBlaze-PRE-Workout-200-Xtreme-0.22-lb-Fruit-Punch_o.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.muscleblaze.com/sv/muscleblaze-pre-workout-200-xtreme/SP-107096?navKey=VRNT-200194&itracker=w:related-products|;p:3|;c:muscleblaze-pre-workout-200-xtreme%2C-0.22-lb-fruit-punch-|;e:10|;&ac_sel=muscleblaze-pre-workout-200-xtreme%2C-0.22-lb-fruit-punch-&search=rework" >Beta-Alanine</a>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-auto block" src="https://img6.hkrtcdn.com/30269/prd_3026885-MuscleBlaze-Pre-Workout-Ripped-0.55-lb-Fruit-Splash_o.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.muscleblaze.com/sv/muscleblaze-pre-workout-ripped/SP-47467?navKey=VRNT-134369&itracker=w:search||searchedTerm-MuscleBlaze%20Pre%20Workout%20200%20Xtreme%2C%20200mg%20Caffeine%2C%20200mg%20Theanine%2C%202000mg%20Beta%20Alanine%2C%203000mg%20Citrulline%20(Fruit%20Punch%2C%20100%20g%2C%2015%20Servings)|;p:7|;e:134369|;" >Caffeine</a>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-54 block" src="https://img10.hkrtcdn.com/31122/prd_3112159-MuscleBlaze-Omega-3-Fish-Oil-1000-mg-with-180mg-EPA-and-120mg-DHA-90-capsules_o.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Supplement</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.muscleblaze.com/sv/muscleblaze-fish-oil-1000-mg-indias-only-labdoor-usa-certified-for-purity-n-accuracy/SP-36756?navKey=VRNT-90655&itracker=w:related-products|;p:1|;c:muscleblaze-fish-oil-(1000-mg)-india%27s-only-labdoor-usa-certified-for-purity-n-accuracy%2C-90-capsules-|;e:10|;&ac_sel=muscleblaze-fish-oil-(1000-mg)-india%27s-only-labdoor-usa-certified-for-purity-n-accuracy%2C-90-capsules-&search=fish+" >Fish Oil</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="text-gray-600 body-font">
+    <h1 class=" sm:text-4xl text-l font-large title-font mb-4 text-gray-900 text-center">Shakers and Equipments</h1>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-flex block" src="https://cdn.dotpe.in/longtail/item_thumbnails/4021157/4Xw5ygZa.webp">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Shaker</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://myonlineprotein.com/product/28489488/Gym-Protein-Steel-Shaker--Gnc-Nutrition?utm_source=GMC" >Gnc Shaker</a>
+            
+          </div>
+        </div>
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-flex block" src="https://cdn.dotpe.in/longtail/item_thumbnails/4021157/DOZfBkPg.webp">
+         
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Shaker</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://myonlineprotein.com/product/28489474/Gym-Protein-Shaker--Gnc?utm_source=GMC" >Gnc Shaker</a>
+            
+          </div>
+        </div>
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.bowflex.com/dw/image/v2/AAYW_PRD/on/demandware.static/-/Sites-nautilus-master-catalog/default/dwf47f306c/images/bfx/weights/710000/bowflex-selecttech-1090-dumbbell-weights-hero.png?sw=200&sh=112&sm=fit">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Dumbbells</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.bowflex.com/selecttech/1090/710000.html" >1090 Dumbbell</a>
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.bowflex.com/dw/image/v2/AAYW_PRD/on/demandware.static/-/Sites-nautilus-master-catalog/default/dwf21fb1cf/images/bfx/weights/100131/bowflex-selecttech-552-dumbbell-weights-hero.jpg?sw=200&sh=112&sm=fit">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Dumbbells</h3>
+            <a class="text-gray-900 title-font text-lg font-medium" href="https://www.bowflex.com/selecttech/552/100131.html" >552 Dumbbell</a>
+            
+          </div>
+        </div>
+
+  </section>
+
+  <h1 class="sm:text-4xl text-l font-large title-font mb-4 text-gray-900 text-center margin-top-15" >
+    <a class="margin-top-15 inline-flex bg-gray-100 border-0 py-5 px-10 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" href="https://nutrabay.com">More Items</a>
+    </h1>
+    
+  
+
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="object-cover object-center rounded" alt="hero" src="https://mydy.dypatil.edu/rait/theme/image.php/essential/theme/1626274710/favicon">
+        </svg>
+        <span class="ml-3 text-xl">DYPU x Flexfit</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Flexfit —
+        <a href="https://twitter.com/Flexfit1111" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@kk</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
+

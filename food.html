@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<title>Calorie's in various food</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://mydy.dypatil.edu/rait/theme/image.php/essential/theme/1626274710/favicon">
+             
+            </svg>
+            <a class="ml-3 text-xl" href="flexfit.html" >Flexfit</a>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="flexfit.html">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+            <a class="mr-5 hover:text-gray-900" href="pricing.html">Services</a>
+            <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+          </nav>
+          <div id="usernameDisplay"></div>
+    
+         
+        </div>
+      </header>
+     
+     
+      <!-- .......................................................................................done with header.......................................................................................... -->
+      <script>
+        // Retrieve username from local storage
+        const username = localStorage.getItem('username');
+        const usernameDisplay = document.getElementById('usernameDisplay');
+    
+        // Update DOM to display username or sign-in button
+        if (username) {
+            usernameDisplay.innerText = `Welcome, ${username}!`;
+        } else {
+            // If username doesn't exist, create and append sign-in button
+            const signInButton = document.createElement('a');
+            signInButton.innerText = 'Sign In';
+            signInButton.href = 'index.html';
+            signInButton.classList.add('inline-flex', 'items-center', 'bg-gray-100', 'border-0', 'py-1', 'px-3', 'focus:outline-none', 'hover:bg-gray-200', 'rounded', 'text-base', 'mt-4', 'md:mt-0');
+            usernameDisplay.appendChild(signInButton);
+        }
+    </script>
+
+
+
+    <title>Food Calorie Calculators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .calculator {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #ffdb4d;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/7 mx-auto flex flex-wrap">
+        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="rice.jpg">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <div class="md:flex-grow">
+            <div class="calculator">
+                <h1>Food Calorie Calculator - Rice</h1>
+                <label for="food">Select a Food:</label>
+                <select id="food1">
+                    <option value="rice">Rice</option>
+                   
+                </select>
+                <label for="quantity">Quantity (grams):</label>
+                <input type="text" id="quantity1" placeholder="Enter quantity">
+                <button id="calculate1">Calculate Calories</button>
+                <div class="result" id="calorieResult1"></div>
+            </div>
+    
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        </section>
+
+       
+        <section class="text-gray-600 body-font overflow-hidden">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="lg:w-4/7 mx-auto flex flex-wrap">
+                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="apples.webp">
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                  <div class="md:flex-grow">
+                    <div class="calculator">
+        
+                        <h1>Food Calorie Calculator - Banana</h1>
+                        <label for="food">Select a Food:</label>
+                        <select id="food2">
+                            
+                            <option value="apple">Apple</option>
+                            
+                        </select>
+                        <label for="quantity">Quantity (grams):</label>
+                        <input type="text" id="quantity2" placeholder="Enter quantity">
+                        <button id="calculate2">Calculate Calories</button>
+                        <div class="result" id="calorieResult2"></div>
+                    </div>
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            </section>
+
+           
+
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="lg:w-4/7 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="carrots.jpg">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                      <div class="md:flex-grow">
+                        <div class="calculator">
+                            <h1>Food Calorie Calculator - Carrot</h1>
+                            <label for="food">Select a Food:</label>
+                            <select id="food3">
+                                <option value="carrot">Carrot</option>
+                                <option value="broccoli">Broccoli</option>
+                                <option value="spinach">Spinach</option>
+                            </select>
+                            <label for="quantity">Quantity (grams):</label>
+                            <input type="text" id="quantity3" placeholder="Enter quantity">
+                            <button id="calculate3">Calculate Calories</button>
+                            <div class="result" id="calorieResult3"></div>
+                        </div>
+                    
+                    
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                </section>
+    
+               
+
+                <section class="text-gray-600 body-font overflow-hidden">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div class="lg:w-4/7 mx-auto flex flex-wrap">
+                        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="bananas.webp">
+                        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                          <div class="md:flex-grow">
+                            <div class="calculator">
+        
+                                <h1>Food Calorie Calculator - Banana</h1>
+                                <label for="food">Select a Food:</label>
+                                <select id="food4">
+                                    <option value="banana">Banana</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="orange">Orange</option>
+                                </select>
+                                <label for="quantity">Quantity (grams):</label>
+                                <input type="text" id="quantity4" placeholder="Enter quantity">
+                                <button id="calculate4">Calculate Calories</button>
+                                <div class="result" id="calorieResult4"></div>
+                            </div>
+                        
+                        
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    </section>
+
+
+                   
+
+
+
+<section class="text-gray-600 body-font overflow-hidden">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div class="lg:w-4/7 mx-auto flex flex-wrap">
+                        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="curd.jpg">
+                        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                          <div class="md:flex-grow">
+                            <div class="calculator">
+        
+                                <h1>Food Calorie Calculator - curd</h1>
+                                <label for="food">Select a Food:</label>
+                                <select id="food5">
+                                    <option value="curd">curd</option>
+                                    
+                                </select>
+                                <label for="quantity">Quantity (grams):</label>
+                                <input type="text" id="quantity5" placeholder="Enter quantity">
+                                <button id="calculate5">Calculate Calories</button>
+                                <div class="result" id="calorieResult5"></div>
+                            </div>
+                        
+                        
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    </section>
+
+
+                   
+  
+
+
+
+
+                    <section class="text-gray-600 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/7 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="Chicken.jpeg">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <div class="md:flex-grow">
+                                <div class="calculator">
+            
+                                    <h1>Food Calorie Calculator - Chicken Breast</h1>
+                                    <label for="food">Select a Food:</label>
+                                    <select id="food6">
+                                        <option value="chickenbreast">chicken breast</option>
+                                        
+                                    </select>
+                                    <label for="quantity">Quantity (grams):</label>
+                                    <input type="text" id="quantity6" placeholder="Enter quantity">
+                                    <button id="calculate6">Calculate Calories</button>
+                                    <div class="result" id="calorieResult6"></div>
+                                </div>
+                            
+                            
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        </section>
+
+                   
+  
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function setupCalculator(foodId, quantityId, calorieResultId) {
+                const calculateButton = document.getElementById(`calculate${foodId}`);
+                const foodSelect = document.getElementById(`food${foodId}`);
+                const quantityInput = document.getElementById(`quantity${quantityId}`);
+                const calorieResult = document.getElementById(`calorieResult${calorieResultId}`);
+
+                const calorieValues = {
+                    rice: 135,
+                    pasta: 200,
+                    bread: 80,
+                    banana: 89,
+                    apple: 52,
+                    orange: 43,
+                    carrot: 41,
+                    broccoli: 55,
+                    spinach: 23,
+                    curd:98,
+                    chickenbreast:165,
+                };
+
+                calculateButton.addEventListener("click", function () {
+                    const selectedFood = foodSelect.value;
+                    const quantity = parseFloat(quantityInput.value);
+
+                    if (isNaN(quantity)) {
+                        calorieResult.textContent = "Please enter a valid quantity.";
+                    } else if (!calorieValues[selectedFood]) {
+                        calorieResult.textContent = "Invalid food selection.";
+                    } else {
+                        const totalCalories = ((calorieValues[selectedFood] * quantity) / 100).toFixed(2);
+                        calorieResult.textContent = `Total Calories: ${totalCalories} calories`;
+                    }
+                });
+            }
+
+            // Set up each calculator
+            setupCalculator(1, 1, 1);
+            setupCalculator(2, 2, 2);
+            setupCalculator(3, 3, 3);
+            setupCalculator(4, 4, 4);
+            setupCalculator(5, 5, 5);
+            setupCalculator(6, 6, 6);
+        });
+    </script>
+<h1 class="sm:text-4xl text-l font-large title-font mb-4 text-gray-900 text-center margin-top-15" >
+  <a class="margin-top-15 inline-flex bg-gray-100 border-0 py-5 px-10 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" href="https://www.livofy.com/fitness-health-calculators/food-calorie-calculator">More Items</a>
+  </h1>
+  
+
+
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img class="object-cover object-center rounded" alt="hero" src="https://mydy.dypatil.edu/rait/theme/image.php/essential/theme/1626274710/favicon">
+      </svg>
+      <span class="ml-3 text-xl">DYPU x Flexfit</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Flexfit —
+      <a href="https://twitter.com/Flexfit1111" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@kk</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+
+</html>
+</html>
+</html>
