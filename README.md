@@ -1,0 +1,1 @@
+FlexFit is a modern fitness web app that provides users with personalized workout plans, progress tracking, and nutritional advice. Designed with simplicity and functionality in mind, FlexFit is your companion for achieving your fitness goals.
