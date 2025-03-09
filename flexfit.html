@@ -244,16 +244,30 @@
   </section>
 
 
-  <script>
-  window.onload = function() {
-    (function(d, m){
-        var chatbot = document.createElement("script");
-        chatbot.src = "https://travel-buddy-app-605070267955.us-central1.run.app"; // Your Cloud Run deployed URL
-        chatbot.async = true;
-        document.head.appendChild(chatbot);
-    })(document);
-  };
-</script>
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="kk-project1-453205"
+  agent-id="884bb3f9-4b42-4671-be8e-828b7f4b8c83"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="Travel Buddy">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
 
 <!-- .......................................................................................done with section,main body.......................................................................................... -->
 
