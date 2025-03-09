@@ -244,8 +244,17 @@
   </section>
 
 
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/c3dbda9c-3300-4b6a-92ab-dbd2303d63c7/webchat/config.js" defer></script>
+  <script>
+  window.onload = function() {
+    (function(d, m){
+        var chatbot = document.createElement("script");
+        chatbot.src = "https://travel-buddy-app-605070267955.us-central1.run.app"; // Your Cloud Run deployed URL
+        chatbot.async = true;
+        document.head.appendChild(chatbot);
+    })(document);
+  };
+</script>
+
 <!-- .......................................................................................done with section,main body.......................................................................................... -->
 
 
